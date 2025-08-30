@@ -1,0 +1,223 @@
+{
+  "version": "39.0.0",
+  "artifacts": {
+    "Localstack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Localstack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}"
+      },
+      "metadata": {
+        "/Localstack/PatientManagementVpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcF1F9209A"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPublicSubnet1Subnet32B9FD34"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPublicSubnet1RouteTableA6B004E5"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPublicSubnet1RouteTableAssociationB803908F"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPublicSubnet1DefaultRouteCC8B87E7"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPublicSubnet1EIP57CBC205"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPublicSubnet1NATGatewayB6BB180F"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPublicSubnet2Subnet301A18D3"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPublicSubnet2RouteTable8FB51550"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPublicSubnet2RouteTableAssociationC6F51BA2"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPublicSubnet2DefaultRoute0DC44EBB"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPublicSubnet2EIP7F7E2B9F"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPublicSubnet2NATGatewayEFB106BB"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPrivateSubnet1SubnetBDF7E702"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPrivateSubnet1RouteTableEE52EACD"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPrivateSubnet1RouteTableAssociation4B6E1CD5"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPrivateSubnet1DefaultRouteFABE5400"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPrivateSubnet2Subnet58F4C9B9"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPrivateSubnet2RouteTable24A9ED13"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPrivateSubnet2RouteTableAssociation1AA2E279"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcPrivateSubnet2DefaultRouteB1A67D2B"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcIGW6E5E564D"
+          }
+        ],
+        "/Localstack/PatientManagementVpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientManagementVpcVPCGW05B0D621"
+          }
+        ],
+        "/Localstack/AuthServiceDB/SubnetGroup/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthServiceDBSubnetGroupCFE5A552"
+          }
+        ],
+        "/Localstack/AuthServiceDB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthServiceDBSecurityGroupBE6D28EB"
+          }
+        ],
+        "/Localstack/AuthServiceDB/Secret/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LocalstackAuthServiceDBSecret1485581D3fdaad7efa858a3daf9490cf0a702aeb"
+          }
+        ],
+        "/Localstack/AuthServiceDB/Secret/Attachment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthServiceDBSecretAttachmentF30406A9"
+          }
+        ],
+        "/Localstack/AuthServiceDB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthServiceDBC6B688BA"
+          }
+        ],
+        "/Localstack/PatientServiceDB/SubnetGroup/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientServiceDBSubnetGroupCED49D16"
+          }
+        ],
+        "/Localstack/PatientServiceDB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientServiceDBSecurityGroup6B97C0E5"
+          }
+        ],
+        "/Localstack/PatientServiceDB/Secret/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LocalstackPatientServiceDBSecret1F8BED833fdaad7efa858a3daf9490cf0a702aeb"
+          }
+        ],
+        "/Localstack/PatientServiceDB/Secret/Attachment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientServiceDBSecretAttachment90D77B03"
+          }
+        ],
+        "/Localstack/PatientServiceDB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PatientServiceDBB84F9BF9"
+          }
+        ]
+      },
+      "displayName": "Localstack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
